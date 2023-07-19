@@ -142,7 +142,14 @@
 
 }
 .gamer-discription{
-
+    color: #534C64;
+    font-size: 18px;
+    font-weight: 400;
+}
+#span{
+    color: #534C64;
+    font-size: 25px;
+    font-weight: 700;
 }
 
 
@@ -150,7 +157,7 @@
 /* Responsive midea queries */
 /* mobile device */
 @media screen and (max-width: 576px) {
-    .nav-section,.nav-title{
+    .nav-section,.nav-title , .gamer{
         flex-direction: column;
         height: 100%;
         padding: 0px 20px;
