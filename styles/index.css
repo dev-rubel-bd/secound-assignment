@@ -32,6 +32,15 @@
     display: flex;
     gap: 10px;
 }
+.nav-item{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 25px;
+    color: #3C354F;
+    font-size: 18px;
+    font-weight: 500;
+}
 
 
 /* Header section styles */
@@ -303,6 +312,13 @@ color: #FFF;
     padding: 0px 300px;
     color: #FFF;
 }
+.policy {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0px 300px;
+    color: #FFF;
+}
 .footer-back{
     width: 100%px;
     height: 636px;
@@ -324,99 +340,284 @@ color: #FFF;
     text-align: center;
     font-size: 16px;
     font-weight: 500;
-    display: flex;
-    justify-content: center;
+    align-items: center;  
 }
-
-
-
 
 /* Responsive midea queries */
 /* mobile device */
-@media screen and (max-width: 576px) {
-    .nav-section,.nav-title , .gamer,.play-game-section,.game-img,.footer-content,.footer,.service,.contuct-img{
+@media screen and (max-width:576px) {
+    .nav-section ,.nav-title , .gamer ,.play-game-section ,.game-img ,.footer-content ,.footer ,.service ,.policy{
         display: grid;
         flex-direction: column;
         height: 100%;
+        width: auto;
         padding: 0px 20px;
         background: none;
         justify-content: center;
         align-items: center;
-    }
-    .follow-section{
-        height: 100%;
-    }
-    .banner{
-        flex-direction: column;
         margin: 0px;
+        text-align: center;
+    }
+    .nav-title{
+        display: inline-block;
+        padding-top: 30px;
+}
+.nav-section{
+    background: none;
+    padding: 50px 0px;
+    height: 100%;
+    width: auto;
+}
+.follow-section{
+    margin-left:  30px;
+}
+.btn-primery{
+    padding-left: 50px;
+}
+.banner{
+    flex-direction: column;
+    margin: 0px;
+    padding: 0px;
+    align-items: center;
 
-    }
-    .banner-content{
-        width: 100%;
-        height: 100%;
-        margin: 0px;
-        
-    }
-    .banner-description{
-        width: 100%;
-        margin: 0px;
-        padding: 0p;
-    }.banner-title-2{
-        width: 400;
-        font-size: 45px;
-        margin: 0px;
-    }
-    .banner-title-1{
-        font-size: 25px;
-
-    }
-    .banner-img img{
-        margin: 0px;
-        padding: 0px;
-    }
-    .gamer-img img{
-        width: 50%;
-        height: auto;
-    }
-.gamer-content{
+}
+.banner-content{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    align-items: center;
+    text-align: center;
+    
+}
+.banner-description{
+    width: 350px;
+    height: 100%;
+    margin: 0px;
+    padding: 30px 20px;
+}.banner-title-2{
+    width: 400;
+    font-size: 45px;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+.banner-title-1{
+    font-size: 25px;
     text-align: center;
     margin: 0px;
+    padding: 0px;
+
+}
+.banner-img img{
+    height: 100%;
+    width: auto;
+    padding: 0px
+}
+.banner-content{
+    background-image: none;
+}
+.gamer-img img{
+    width:350px;
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+    align-items: center;
+}
+.gamer-content{
+text-align: center;
+margin: 0px;
+padding: 0px;
+height: 100%;
 }
 .gamer-discription{
-    margin: 0px;
+margin: 0px;
+padding: 0px;
+align-items: center;
+text-align: center;
 }
 .game-cart{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    margin: 0px;
+display: grid;
+grid-template-columns: repeat(1,1fr);
+margin: 0px;
+padding: 0px;
+}
+.cart{
+padding-left: 30px;
+}
+.play-game-img img{
+height: 100%;
+width: 200px;
+padding-left: 140px;
+
 }
 .game-list-section{
-    margin: 0px;
-    background: none;
+margin: 0px;
+background: none;
+display: none;
 }
-.game-list-img{
-
+.service{
+display: grid;
+grid-template-columns: repeat(3,1fr) ;
+}
+.policy{
+display: grid;
+grid-template-columns: repeat(2,1fr) ;
+}
+.contuct-img{
+margin: 0px;
+text-align: center;
+padding: 30px 0px;
+}
+.footer-back{
+height: auto;
+width: 100%;
+margin: 0px;
 }
 #end{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    margin: 0px;
+padding: 20px;   
 }
-
-
-
+.footer-content{
+display: inline-block;
+padding-top: 30px;
+}
     
-    }
+}
+@media screen and (min-width:576px) and (max-width:950px) {
 
- /* tablet or mediam device */
-@media screen and (min-width: 576px) and (max-width: 960px){
-    .nav-section,.nav-title{
+        .nav-section ,.nav-title , .gamer ,.play-game-section ,.game-img ,.footer-content ,.footer ,.service ,.policy{
+        display: grid;
         flex-direction: column;
         height: 100%;
+        width: auto;
         padding: 0px 20px;
+        background: none;
+        justify-content: center;
+        align-items: center;
+        margin: 0px;
+        text-align: center;
     }
-    .follow-section{
-        height: 100%;
-    }
+    .nav-title{
+        display: inline-block;
+        padding-top: 30px;
+}
+.nav-section{
+    background: none;
+    padding: 50px 0px;
+    height: 100%;
+    width: auto;
+}
+.follow-section{
+    margin-left:  30px;
+}
+.btn-primery{
+    padding-left: 50px;
+}
+.banner{
+    flex-direction: column;
+    margin: 0px;
+    padding: 0px;
+    align-items: center;
 
+}
+.banner-content{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    align-items: center;
+    text-align: center;
+    
+}
+.banner-description{
+    width: 350px;
+    height: 100%;
+    margin: 0px;
+    padding: 30px 20px;
+}.banner-title-2{
+    width: 400;
+    font-size: 45px;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+.banner-title-1{
+    font-size: 25px;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+
+}
+.banner-img img{
+    height: 100%;
+    width: auto;
+    padding: 0px
+}
+.banner-content{
+    background-image: none;
+}
+.gamer-img img{
+    width:350px;
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+    align-items: center;
+}
+.gamer-content{
+text-align: center;
+margin: 0px;
+padding: 0px;
+height: 100%;
+}
+.gamer-discription{
+margin: 0px;
+padding: 0px;
+align-items: center;
+text-align: center;
+}
+.game-cart{
+display: grid;
+grid-template-columns: repeat(1,1fr);
+margin: 0px;
+padding: 0px;
+}
+.cart{
+padding-left: 30px;
+}
+.play-game-img img{
+height: 100%;
+width: 200px;
+padding-left: 140px;
+
+}
+.game-list-section{
+margin: 0px;
+background: none;
+display: none;
+}
+.service{
+display: grid;
+grid-template-columns: repeat(3,1fr) ;
+}
+.policy{
+display: grid;
+grid-template-columns: repeat(2,1fr) ;
+}
+.contuct-img{
+margin: 0px;
+text-align: center;
+padding: 30px 0px;
+}
+.footer-back{
+height: auto;
+width: 100%;
+margin: 0px;
+}
+#end{
+padding: 20px;   
+}
+.footer-content{
+display: inline-block;
+padding-top: 30px;
+}
 }
