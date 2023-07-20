@@ -183,12 +183,11 @@
     margin-left: 150px;
     margin-right: 150px;
   }
-  
-  .cart {
+
+.cart {
     max-width: 100%;
     
   }
-  
   
 .cart img {
     max-width: 100%;
@@ -197,7 +196,7 @@
     border: 5px solid white;
     
   }
-  .cart img:hover{
+.cart img:hover{
     transform: scale(1.1);
     border-color: rgba(242, 46, 199, 0.963);
     border-radius: 20px;
@@ -206,7 +205,6 @@
   .watch-now{
     font-size: 1em;
     width: 600;
-    color: ;
   }
   .funny-span{
     color: #f63294;
